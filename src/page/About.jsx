@@ -9,7 +9,7 @@ export default function About() {
       <div className="About">
          <Nav />
          <Title title="About" name="yebyn" />
-         <HStack className="content" gap={'20px'}>
+         <HStack className="content" align="stretch" gap={'20px'}>
             <Box className="profile">
                <img src={image2} />
                <Box className="name">

@@ -1,67 +1,58 @@
-.name, .birth, .phone {
-  display: flex;
-  height: 100%;
-  justify-content: stretch;
-  gap: 40px;
-  margin-bottom: 20px;
-  font-size: 1.4rem;
+.name,
+.birth,
+.phone {
+   display: flex;
+   height: 100%;
+   justify-content: stretch;
+   gap: 40px;
+   margin-bottom: 20px;
+   font-size: 1.4rem;
 }
-.name > div:nth-child(2), .birth > div:nth-child(2), .phone > div:nth-child(2) {
-  color: var(--color-text-main);
+.name > div:nth-child(2),
+.birth > div:nth-child(2),
+.phone > div:nth-child(2) {
+   color: var(--color-text-main);
 }
-
 
 /* ========== Layout Container ========== */
 .About {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
 }
 
 /* ========== Main Content ========== */
 /* Left: Profile | Right: Character Grid */
 .content {
   margin: 0 100px;
-  padding:  20px 0;
+  /* flex: 1; */
+  padding: 20px 0;
   display: flex;
   gap: 20px;
-  align-items: stretch;
 }
 
 /* ========== Profile Section ========== */
 .profile {
-  width: 400px;
-  height: 100%;
-  /* max-height: none; */
-  flex: 0 0 350px;
   display: flex;
   flex-direction: column;
-  justify-content: stretch;
-  border: 1px solid black;
   gap: 20px;
+  height: 100%; /* ✅ content 높이 기준으로 늘어남 */
+  height: auto;
 }
+
 
 .profile img {
   width: 100%;
-  height: 100%;
+  object-fit: cover; /* ✅ 이미지 꽉 채우기 */
   border-radius: 8px;
 }
 
 /* ========== Character Grid Section ========== */
 .character {
-  width: 100%;
-  display: flex;
-  justify-content: stretch;
+  flex: 1; /* ✅ 나머지 영역 채우기 */
+  display: grid; /* ✅ 카드 배치에 grid로 변경 */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  height: auto; /* ✅ profile과 동일 높이 */
 }
 
-/* Character 개별 카드 */
-
-/* ========== Typography ========== */
-
-/* ========== Project Section ========== */
-
-
-/* ========== Strength / Skills Grid ========== */
-
-/* ========== Global Polish ========== */
