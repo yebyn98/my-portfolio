@@ -1,0 +1,26 @@
+.item {
+   color: var(--color-toggle-text);
+   cursor: pointer;
+   width: 60px;
+   padding: 4px;
+   text-align: center;
+   border-radius: 6px;
+   transition: all 0.1s ease;
+   font-size: 0.8rem;
+}
+.toggle-group {
+   background-color: var(--color-toggle-bg);
+   padding: 3px;
+   display: flex;
+   align-items: center;
+   border-radius: 6px;
+}
+/* 선택된 상태 */
+.item[data-state='checked'] {
+   background-color: var(--color-toggle-button);
+   color: var(--color-toggle-text);
+}
+.item:hover {
+   background-color: var(--color-toggle-hover);
+   color: var(--color-toggle-text);
+}

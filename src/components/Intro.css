@@ -1,0 +1,121 @@
+body {
+   margin: 0;
+   padding: 0;
+   font-family: 'Inter-Medium', 'NotoSansKR-Medium';
+   font-size: 16px;
+   font-weight: 600;
+   color: var(--color-text-main);
+   background-color: var(--color-bg);
+}
+
+.button {
+   border-radius: 5px;
+   border: none;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+   padding: 20px;
+   width: 200px;
+   margin-top: 30px;
+   font-weight: 600;
+   border-radius: 10px;
+   font-size: 1.2rem;
+}
+
+
+.question {
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   z-index: 1;
+   width: 100%;
+   height: 100%;
+   font-size: 2rem;
+}
+
+.question.click {
+   opacity: 0;
+   pointer-events: none;
+   transition: opactiy 0.5s ease;
+}
+
+.ask {
+   color: var(--color-day);
+}
+.Box {
+   display: flex;
+   z-index: -1;
+   width: 100vw;
+   height: 100vh;
+}
+.box1,
+.box2 {
+   width: 50%;
+   height: 100%;
+   transition: transform 3s ease;
+   background-color: rgba(43, 58, 66, 0.8);
+   transform: translateX(0);
+}
+.Box.open .box1 {
+   transform: translateX(-90%);
+}
+.Box.open .box2 {
+   transform: translateX(90%);
+}
+
+.Show {
+   /* 같은 위치에 두가지 요소 배치하기 위해서는 위치 지정 필수 */
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   flex-direction: column;
+   font-size: 1.5rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   opacity: 0;
+   visibility: hidden;
+   transition:
+      opacity 0.5s ease,
+      visibility 0.5s ease;
+   z-index: 2;
+}
+.Show.show {
+   opacity: 1;
+   visibility: visible;
+}
+.show > div {
+   margin-bottom: 30px;
+}
+
+.title {
+   color: #00a6ed;
+   font-weight: 800;
+   font-size: 3rem;
+}
+
+.concept {
+   color: var(--color-text-sub);
+   font-weight: 400;
+   font-size: 2rem;
+}
+
+.author {
+   color: #94a3b8;
+   font-weight: 600;
+   font-size: 1.8rem;
+}
+
+.start {
+   border-radius: 10px;
+   width: 300px;
+   padding: 20px;
+   font-size: 1.5rem;
+   border: 1px solid rgba(0, 0, 0, 0.4);
+}
+

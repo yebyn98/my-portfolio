@@ -1,0 +1,84 @@
+
+
+/* ===============================
+   :root - 컬러 변수 (Day Mode)
+   =============================== */
+:root {
+   /* 배경 */
+   --color-bg: #F5FAFC;
+   --color-card-bg: #FFFFFF;
+
+   /* 메인 포인트 (Barrier-Free 민트) */
+   --color-main: #4DD2A5;
+
+   /* 서브 포인트 (따뜻한 연두/노랑) */
+   --color-sub: #FFA07A;
+
+   /* 텍스트 */
+   --color-text-main: #2B2B2B;
+   --color-text-sub: #6B6B6B;
+
+   /* 강조 / 버튼 */
+   --color-accent: #4DD2A5;
+   --color-accent-hover: #FFA07A;
+   --color-danger: #FF6B6B;
+
+   /* 버튼 */
+   --color-button: #3CB892;
+   --color-button-hover: #36A57F;
+   --color-button-disabled: #C4C4C4;
+   --color-button-text: #FFFFFF;
+
+   /* 토글 버튼 */
+   --color-toggle-bg: #4DD2A5;
+   --color-toggle-hover: #236c52;
+   --color-toggle-text: #FFFFFF;
+   --color-toggle-button: #121A1F;
+
+   /* 라인 / 그림자 */
+   --color-line: #D9D9D9;
+
+   /* 그라디언트 */
+   --color-gradient: linear-gradient(90deg,rgba(18, 23, 28, 1) 0%, rgba(255, 255, 255, undefined) 100%);
+}
+
+/* ===============================
+Dark Mode
+=============================== */
+body.dark, .dark {
+   /* 배경 */
+   --color-bg: #121A1F;
+   --color-card-bg: #1E272C;
+   
+   /* 메인 / 서브 포인트 */
+   --color-main: #4DD2A5;
+   --color-sub: #FFA07A;
+   
+   /* 텍스트 */
+   --color-text-main: #E1E1E1;
+   --color-text-sub: #A0A0A0;
+   
+   /* 강조 / 버튼 */
+   --color-accent: #4DD2A5;
+   --color-accent-hover: #FFA07A;
+   --color-danger: #FF6B6B;
+   
+   /* 버튼 */
+   --color-button: #36A57F;
+   --color-button-hover: #2E8C69;
+   --color-button-disabled: #3A3A3A;
+   --color-button-text: #121A1F;
+   
+   /* 토글 버튼 */
+   --color-toggle-bg: #36A57F;
+   --color-toggle-hover: #2E8C69;
+   --color-toggle-text: #121A1F;
+   --color-toggle-button: #FFFFFF;
+   
+   /* 라인 / 그림자 */
+   --color-line: #2C2C2C;
+   
+   
+   /* 그라디언트 */
+   --color-gradient: radial-gradient(circle,rgba(42, 101, 122, 1) 0%, rgba(18, 23, 28, 1) 100%, rgba(122, 199, 214, 1) 100%);
+}

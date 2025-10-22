@@ -1,0 +1,67 @@
+.name, .birth, .phone {
+  display: flex;
+  height: 100%;
+  justify-content: stretch;
+  gap: 40px;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+.name > div:nth-child(2), .birth > div:nth-child(2), .phone > div:nth-child(2) {
+  color: var(--color-text-main);
+}
+
+
+/* ========== Layout Container ========== */
+.About {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* ========== Main Content ========== */
+/* Left: Profile | Right: Character Grid */
+.content {
+  margin: 0 100px;
+  padding:  20px 0;
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+}
+
+/* ========== Profile Section ========== */
+.profile {
+  width: 400px;
+  height: 100%;
+  /* max-height: none; */
+  flex: 0 0 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  border: 1px solid black;
+  gap: 20px;
+}
+
+.profile img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+/* ========== Character Grid Section ========== */
+.character {
+  width: 100%;
+  display: flex;
+  justify-content: stretch;
+}
+
+/* Character 개별 카드 */
+
+/* ========== Typography ========== */
+
+/* ========== Project Section ========== */
+
+
+/* ========== Strength / Skills Grid ========== */
+
+/* ========== Global Polish ========== */

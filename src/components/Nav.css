@@ -1,0 +1,42 @@
+.Nav {
+   margin: 0 100px;
+   padding: 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   cursor: pointer;
+   gap: 200px;
+}
+
+.logo {
+   font-size: 2rem;
+   cursor: pointer;
+}
+
+.menu {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+}
+
+.menu > #menu-item {
+   text-align: center;
+   width: 100%;
+   padding: 0.8rem;
+   font-size: 1.2rem;
+   cursor: pointer;
+   color: var(--color-text-main);
+   border-bottom: 1px solid var(--color-line);
+   font-weight: 600;
+}
+
+.menu > #menu-item.active {
+   color: var(--color-sub);
+   border-bottom: 2px solid var(--color-sub);
+}
+
+.menu > #menu-item:hover {
+   color: var(--color-text-sub);
+   border-bottom: 1px solid var(--color-text-sub);
+}
